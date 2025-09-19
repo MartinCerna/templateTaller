@@ -35,7 +35,7 @@ header .logo img {
 }
 
 main {
-   background-image: url('https://www.terasic.com.tw/theme/rwd/img/background/page-header.jpg');
+   background-image: url('img/terasic.jpg');
    background-size: cover;
    height: 76vh;
    color: white;
