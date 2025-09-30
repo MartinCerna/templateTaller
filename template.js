@@ -1,7 +1,12 @@
 function exportBodyAsImage() {
    html2canvas(document.body, {
-      useCORS: true,   // Habilita carga de imágenes externas
-      allowTaint: true // Permite renderizar aunque no sean del mismo dominio
+      useCORS: true,
+      allowTaint: true,
+      width: 1920,      // Fuerza ancho
+      height: 1080,     // Fuerza alto
+      windowWidth: 1920, // Simula viewport ancho
+      windowHeight: 1080, // Simula viewport alto
+      scale: 1          // Evita que escale con el devicePixelRatio
    }).then(canvas => {
       const imgData = canvas.toDataURL("image/png");
       const link = document.createElement("a");
